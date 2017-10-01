@@ -1,0 +1,45 @@
+.title{
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Arvo', serif;
+}
+
+.signOut {
+  right: 10px;
+  top: 5px;
+  color: black;
+  background-color: white;
+  position: absolute;
+  display: inline-block;
+}
+
+.signOut:hover {
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("background.jpg");
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input: focus {
+  border: 3px solid #555;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Arvo', serif;
+}

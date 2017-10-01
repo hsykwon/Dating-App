@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <link rel='stylesheet' type="text/css" href="static/main.css">
+    <!-- font change -->
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/themes/default.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/themes/default.date.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js"></script>
+    
+  </head>
+
+  <body>
+
+  <div id="outer">
+    <div class="inner">
+      <button align=center type="button" onclick="location.href='/signOutHandler'" class="signOut"
+      value="sign out" id="button">sign out</button>
+      <button align=center type="button" onclick="location.href='/photoHandler'" class="photo" id="button">photo memories</button>
+    </div>
+   </div>
+
+    <h1 class="title">app main page</h1>
+
+    <form>
+      <label>Anniversary date</label><br>
+      <input type="text" class="datepicker" placeholder="Pick your anniversary date!">
+    </form>
+
+    <form>
+      <label>First date</label><br>
+      <input type="text" placeholder="Our first date...">
+    </form>
+
+    <form>
+      <label>Favorite memory</label><br>
+      <input type="text" placeholder="Our favorite memory...">
+    </form>
+
+  </body>
+
+  <script>
+   var date = $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false, // Close upon selecting a date,
+  });
+
+   console.log(date.get('select', 'yyyy-mm-dd'));
+
+  </script>
+
+</html>
