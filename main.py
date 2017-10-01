@@ -39,8 +39,24 @@ class signOutHandler(webapp2.RequestHandler):
         signouturl = users.create_logout_url('/')
         self.redirect(signouturl)
 
+# class gatherInfoHandler(webapp2.RequestHandler):
+#     def get(self):
+#         main_template = env.get_template('gatherInfo.html')
+#         self.response.out.write(main_template.render())
+#     def post(self):
+#         name1 = self.request.get("name1")
+#         name2 = self.request.get("name2")
+#         template_values = {
+#             "name1":name1,
+#             "name2":name2,
+#         }
+#         template = env.get_template('index.html')
+#         self.response.out.write(template.render(template_values))
+
+
 app = webapp2.WSGIApplication([
     ('/', signIn),
     ('/signOutHandler', signOutHandler),
+    # ('/gatherInfoHandler', gatherInfoHandler),
 
 ], debug=True)
