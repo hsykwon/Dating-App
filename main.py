@@ -56,7 +56,7 @@ class signOutHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', signIn),
-    ('/signOutHandler', signOutHandler),
+    ('/signOut', signOutHandler),
     # ('/gatherInfoHandler', gatherInfoHandler),
 
 ], debug=True)
