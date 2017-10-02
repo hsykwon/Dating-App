@@ -29,26 +29,35 @@
 
     <h1 class="title">l<text class="heart">♥</text>ve<sup>2</sup></h1>
 
+<!-- This is the code for the anniversary date -->
     <form>
       <label>Anniversary date</label><br>
-      <input type="text" class="datepicker" placeholder="Pick your anniversary date!">
-      <button onclick="myFunction()">Submit</button>
+      <input type="text" class="datepicker" placeholder="Pick your anniversary date!" id="anniv">
     </form>
 
+    <button onclick="storeData1();">Submit</button>
+    <label>Your input: </label>
+    <p><span id='display1'></span></p>
+
+<!-- This is the code for the first date -->
     <form>
       <label>First date</label><br>
       <input type="text" placeholder="Our first date..." id="firstDate">
     </form>
 
-    <button onclick="storeData();">Submit</button>
+    <button onclick="storeData2();">Submit</button>
     <label>Your input: </label>
-    <p><span id='display'></span></p>
+    <p><span id='display2'></span></p>
 
+<!-- This is the code for the favorite memory -->
     <form>
       <label>Favorite memory</label><br>
-      <input type="text" placeholder="Our favorite memory...">
-      <button onclick="myFunction()">Submit</button>
+      <input type="text" placeholder="Our favorite memory..." id="favMem">
     </form>
+
+    <button onclick="storeData3();">Submit</button>
+    <label>Your input: </label>
+    <p><span id='display3'></span></p>
 
   </body>
 
