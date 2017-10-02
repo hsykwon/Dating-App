@@ -277,6 +277,7 @@ h1 strong {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  font-family: 'Arvo', serif;
 }
 
 .button span {

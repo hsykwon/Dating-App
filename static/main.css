@@ -9,7 +9,7 @@
   align-content: right;
   position: absolute;
   top: 1%;
-  left: 94%;
+  left: 92%;
   display: inline-block;
   border-radius: 4px;
   border: 1px solid white;
@@ -29,10 +29,11 @@ body {
 }
 
 input {
-  width: 80%;
+  width: 70%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 input: focus {
@@ -77,6 +78,7 @@ sup {
   cursor: pointer;
   margin: 5px;
   background-color: Transparent;
+  font-family: 'Arvo', serif;
 }
 
 .button span {

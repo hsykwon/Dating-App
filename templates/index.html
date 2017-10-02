@@ -31,7 +31,7 @@
   <!-- This is the code for the anniversary date -->
     <form>
       <label>Anniversary date</label><br>
-      <input type="text" class="datepicker" placeholder="Pick your anniversary date!" onfocus="this.placeholder = ''" id="anniv">
+      <input onmouseover="changeCursor();" type="text" class="datepicker" placeholder="Pick your anniversary date!" onfocus="this.placeholder = ''" id="anniv">
     </form>
 
     <button class="button" onclick="storeData1();"><span>Submit</span></button>
@@ -61,16 +61,15 @@
   </body>
 
   <script>
-   var date = $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false, // Close upon selecting a date,
-  });
 
-   console.log(date.get('select', 'yyyy-mm-dd'));
+   var date = $('.datepicker').pickadate({
+      selectMonths: true, // Creates a dropdown to control month
+      selectYears: 15, // Creates a dropdown of 15 years to control year,
+      today: 'Today',
+      clear: 'Clear',
+      close: 'Ok',
+      closeOnSelect: false, // Close upon selecting a date,
+    });
 
   </script>
 

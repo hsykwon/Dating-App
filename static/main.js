@@ -24,3 +24,7 @@ function storeData3() {
 	document.getElementById('display3').innerHTML = document.getElementById('favMem').value;
 	localStorage.setItem("input3", document.getElementById('favMem').value);
 }
+
+function changeCursor(){
+  document.getElementById("anniv").style.cursor = "pointer";
+}
