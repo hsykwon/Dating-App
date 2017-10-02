@@ -1,7 +1,7 @@
 .title{
   text-align: center;
   font-size: 100px;
-  font-family: 'Qwigley', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .signOut {
@@ -54,6 +54,6 @@ p {
 }
 
 sup {
-  font-size: 65px;
+  font-size: 40px;
   font-weight: bold;
 }
