@@ -1,7 +1,7 @@
 .title{
   text-align: center;
-  font-size: 150px;
-  font-family: 'Quicksand', sans-serif;
+  font-size: 100px;
+  font-family: 'Qwigley', cursive;
 }
 
 .signOut {
@@ -41,6 +41,10 @@ form {
 label {
   text-align: center;
   font-size: 15px;
+  font-family: 'Arvo', serif;
+}
+
+p {
   font-family: 'Arvo', serif;
 }
 
