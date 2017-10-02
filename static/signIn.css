@@ -82,6 +82,15 @@ h1 strong {
     transform: translate(-50%, -50%);
 }
 
+.soon{
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    color: red;
+}
 #intropage{
   width: 99%;
   margin-top: 285px;
