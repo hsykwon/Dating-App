@@ -7,12 +7,14 @@
     <link rel='stylesheet' type="text/css" href="static/main.css">
     <!-- font change -->
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/themes/default.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/themes/default.date.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js"></script>
+    <script src ="../static/main.js"></script>
     
   </head>
 
@@ -25,21 +27,27 @@
     </div>
    </div>
 
-    <h1 class="title">Dating app</h1>
+    <h1 class="title">L<text class="heart">♥</text>ve<sup>2</sup></h1>
 
     <form>
       <label>Anniversary date</label><br>
       <input type="text" class="datepicker" placeholder="Pick your anniversary date!">
+      <button onclick="myFunction()">Submit</button>
     </form>
 
     <form>
       <label>First date</label><br>
-      <input type="text" placeholder="Our first date...">
+      <input type="text" placeholder="Our first date..." id="firstDate">
     </form>
+
+    <button onclick="storeData();">Submit</button>
+    <label>Your input: </label>
+    <p><span id='display'></span></p>
 
     <form>
       <label>Favorite memory</label><br>
       <input type="text" placeholder="Our favorite memory...">
+      <button onclick="myFunction()">Submit</button>
     </form>
 
   </body>
