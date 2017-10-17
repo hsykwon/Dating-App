@@ -52,15 +52,22 @@ h1 strong {
 
 .cb-slideshow li:nth-child(1) span {
     background-image: url("love1.jpg");
-    animation-delay: 0s;
 }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url("love2.jpeg");
+    background-image: url("love2.jpg");
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
     background-image: url("love3.jpg");
     animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url("love4.jpg");
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url("love5.jpg");
+    animation-delay: 24s;
 }
 
 @keyframes imageAnimation {

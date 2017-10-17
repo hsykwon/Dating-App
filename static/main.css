@@ -127,3 +127,9 @@ sup {
   top: 0px;
   right: 0px;
 }
+
+.answer {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
